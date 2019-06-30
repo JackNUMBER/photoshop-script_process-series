@@ -6,21 +6,23 @@ To:
 
 ![Output files](https://raw.githubusercontent.com/JackNUMBER/ps-process_series/master/readme_images/process_series2.png)
 
-####IN:
-Files: `<nn><a|b|c>.jpg`
-nn = number of the serie (01, 02, ...)
-a|b|c = file position in the serie (from 1 to 3 element by serie)
+#### INPUTS:
+Filename layout: `<nn><a|b|c>.jpg`
 
-####OUT:
-Files: `serie_<nn>.jpg` (1 file by serie)
+`nn` = id of the serie (01, 02, ...)
 
-####PROCESS:
-Count series.
-For each serie, each file is resized and copyed in a layer.
-Depending how much files there is in the serie, layer are postioned.
-Save file for web.
+`a|b|c` = file position in the serie (from one to three elements)
 
-####LEARNING:
+#### OUTPUTS:
+One file by serie: `serie_<nn>.jpg`
+
+#### PROCESS:
+1. Count series.
+2. For each serie, each file is resized and copyed in a layer.
+3. Depending how much files there is in the serie, layer are postioned.
+4. Save file for web.
+
+#### LEARNING:
 In this script you can learn about:
 - user input with prompt
 - move a layer
